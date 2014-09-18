@@ -1,0 +1,248 @@
+
+@font-face {
+    font-family: 'existencelight';
+    src: url('../fonts/Existence-Light-webfont.eot');
+    src: url('../fonts/Existence-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Existence-Light-webfont.woff') format('woff'),
+         url('../fonts/Existence-Light-webfont.ttf') format('truetype'),
+         url('../fonts/Existence-Light-webfont.svg#existencelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.body {
+	margin: 0 auto;
+	background-color: #000;
+
+}
+
+.topContent {
+	padding-top: 15px;
+	margin: 0 auto;
+	position: relative;
+	width: 70%;
+	max-width: 1300px;
+	/*background-color: #000;*/
+}
+
+.logo {
+	width: 350px;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button-login:link, .button-login:visited {
+	font-size: 1.3em;
+	float: right;
+	margin-left: 15px;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #272822;
+	color: white;
+	border: 1px solid white;
+	padding: 10px 20px;
+	vertical-align: middle;
+	font-family: Trebuchet MS, Arial, sans-seirf;
+}
+
+.button-login:hover {
+	background-color: white;
+	color: #000;
+}
+
+.button-register:link {
+	color: #FF0000;
+}
+
+.button-register:hover {
+	background-color: #FF0000;
+	border-color: #FF0000;
+	color: #FFF;
+}
+
+.topContainer {
+	position: relative;
+	height: 66px;
+	margin-bottom: 15px;
+}
+
+.topContainer>div {
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+}
+
+.frontImg {
+	/*height: 100%;*/
+	background-image: url('../img/back.jpg');
+	height: 600px;
+}
+
+.frontImg h1 {
+	text-align: center;
+	color: white;
+	font-family: existencelight, Trebuchet MS, sans-serif;
+	font-size: 5em;
+	font-weight: 900;
+}
+
+.frontImgContainer {
+	width: 70%;
+	position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+	margin: 0 auto;
+	font-family: existencelight, Trebuchet MS, sans-serif;
+}
+
+.aboutOmni {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 20px;
+	background-color: #FFF;
+}
+.aboutOmni  h1 {
+	font-size: 2em;
+	font-family: existencelight, Trebuchet MS, sans-serif;
+}
+
+.aboutOmni p {
+	font-size: 1.3em;
+	font-weight: 900;
+	text-align: justify;
+	font-family: existencelight, Trebuchet MS, sans-serif;
+
+}
+
+.bottomContainer {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+
+.footer {
+	background-color: #000;
+	margin: 0 auto;
+	min-height: 40px;
+}
+
+.footerContainer {
+	width: 70%;
+	margin: 0 auto;
+	font-family: existencelight, Trebuchet MS, sans-serif;
+	color: #FFF;
+	position: relative;
+
+}
+
+.footerContainer h2 {
+	font-size: 2em;
+	color: white;
+	margin-bottom: 5px;
+
+}
+
+.footerContainer p {
+	font-size: 1.2em;
+	/*margin-bottom: px;*/
+}
+
+.footerLeft {
+	float: left;
+	display: inline-block;
+	/*vertical-align: middle;*/
+}
+
+
+.iconSocial {
+	float: right;
+}
+
+.socialImg {
+	width: 80px;
+	-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+.socialImg:hover {
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+filter: grayscale(0%);	
+}
+
+.footerRight {
+	float: right;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	/*.body {
+		background-color: red;
+	}*/
+	.frontImg {
+		height: 500px;
+	}
+
+	.topContent {
+		width: 90%;
+	}
+
+	.iconSocial {
+		clear: both;
+	}	
+
+	.footerRight {
+		float: left;
+	}
+
+	.footerLeft {
+		clear: both;
+		float: left;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.logo {
+		float: left;
+		
+	}
+	.topContainer>div {
+		display: block;
+		/*vertical-align: middle;*/
+		/*width: 49%;*/
+	}
+	.button-login:link, .button-login:visited {
+		/*width: 100px;*/
+		/*clear: both;*/
+		text-align: center;
+		margin-top: 10px;
+		margin-left: 0;
+		margin-right: 10px;
+		float: left;
+	}
+	.socialImg {
+		width: 50px;
+	}
+	.button-register {
+
+	}
+	.button-login {
+		
+	}
+	.frontImg {
+		height: 1362px;
+		}
+
+}
+
+/*@media only screen and (max-width: 400px) {
+	.topContent {
+		width: 96%;
+	}
+
+}*/
