@@ -2,6 +2,8 @@
 <html lang="en">
 	<head>
 		<title>Omniscient</title>
+		<script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+		
 		<meta charset="utf-8" />
 
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -13,83 +15,52 @@
 		<link href="css/style_anim.css" rel="stylesheet" type="text/css" />
 
 	</head>
+	<style type="text/css"> * {margin:0; padding: 0;} html, body {height:100%;} /** format elements which have backgrounds parallax **/ .bgParallax { font-family: 'Elsie', cursive; color:#FFF; margin: 0 auto; width: 100%; max-width: 1920px; position: relative; min-height: 100%; text-shadow:0 0 10px rgba(0,0,0,0.7); background-position: 50% 0; background-repeat: repeat; background-attachment: fixed; } /* Define backgrounds of divs */ #aboutus {background-image: url(img/bg2.jpg);} #mission { background-image: url(img/bg1.jpg); -webkit-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7); -moz-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7); -ms-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7); -o-box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7); box-shadow:-20px 0 20px 5px rgba(0,0,0,0.7); } /** Format article **/ .bgParallax article { width: 70%; text-align: center; margin:0 auto; padding:20% 0 0; } /** format text **/ article h1 {font-size:40px;} article p {line-height: 30px; font-size:20px; margin-top:15px;} article p a {color:#FFF; text-decoration:none; font-size:30px;} </style> <script type="text/javascript"> $('div.bgParallax').each(function(){ var $obj = $(this); $(window).scroll(function() { var yPos = -($(window).scrollTop() / $obj.data('speed')); var bgpos = '50% '+ yPos + 'px'; $obj.css('background-position', bgpos ); }); }); </script>
 
-	<body class="body">
-		<header class="topContent">
-			<div class="topContainer">
-				<div>
-					<img src="img/logo.png" class="logo">
 
-				</div>
-				<div>
-					<a href="Default.aspx" class="button-login"> Login </a>
-					<a href="#" class="button-login button-register"> Register </a>
-				</div>
-			</div>
-		</header>
-		<div style="clear:both"></div>
-		<div class="frontImg">
-			<div class="frontImgContainer">
-				<div class="container">
-		    		<div class="header">
-		        		<div class="clr"></div>
-		   			 </div>
-		   			 <div class="sp-container">
-		        		<div class="sp-content">
-		         		   <div class="sp-globe"></div>
-		            		<h2 class="frame-1">Want Your Updated Attendance ?</h2>
-
-		            		<h2 class="frame-2">Dont Know Where to Check regularly.!!</h2>
-
-		            		<h2 class="frame-3">Here is How we have solved..</h2>
-
-		            		<h2 class="frame-4">Now!</h2>
-
-		            		<h2 class="frame-5"><span>Get Connected <br>With <span style="color:#FF0000">O</span>mniscient</span> <span>For Your Attendance</span></h2>
-							<a class="sp-circle-link" href="#">Join us!</a>
-
-		        		</div>
-		    		</div>
-				</div>
-			</div>
-						 
-		</div>	
-		<div class="bottomContainer">
-			<div class="aboutOmni">
-				<h1>What is <span style="color:#FF0000;font-size:1.4em;">O</span>mniscient?</h1>
-				<p>
-				Have you ever wondered about your attendance? Less or more or sufficient or insufficient? Leave all the problems behind. Get connected to <span style="color:#FF0000">Omniscient</span>. Your one-stop solution for all your worries. Now check your attendance on the fly, on your phone or the web, all just one Click away. Register now and come back any time to check your updated records. 
-				</p>
-				<br><br>
-			</div>	
-		</div>
-
-		<footer class="footer">
-			<div class="footerContainer">
-				<div class="footerRight">
-					<div class="iconSocial">
-					<h2 style="padding-bottom:20px;"><span style="color:#FF0000;">Connect</span> with Us</h2>
-						<a href="http://www.facebook.com/something"><img src="img/facebook.png" class="socialImg"></a>
-						<a href="http://plus.google.com/something"><img src="img/google-plus.png" class="socialImg"></a>
-						<a href="http://www.twitter.com/something"><img src="img/twitter.png" class="socialImg"></a><br>
-						<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FOmniscient%2F642532642512012&amp;width=300&amp;height=290&amp;colorscheme=dark&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; margin-top:10px; height:290px;" allowTransparency="true"></iframe>
-					</div>
-
-				</div>
-				<div class="footerLeft">
-					<h2><span style="color:#FF0000;">Contact</span> Us</h2>
-					<p><strong><a href="mailto:contact@omniscient.com" style="text-decoration:none;color:#FFF;">contact@omniscient.com</a></strong></p>
-					<p style="font-size:1.5em;">R V College of Engineering, Bangalore</p>
-					<p><strong><span style="color:#FF0000;font-size:1.4em;">O</span>mniscient @ <span style="color:#FF0000;">2014</span> All rights reserved  </strong></p>
-					<br>
-
-				</div>
-				
-			</div>
-			<br><br>
-
-		</footer>
-
-		
-	</body>
+	<body class="body"> <header class="topContent"> 
+  <div class="topContainer"> 
+    <div> <a href="#"><img class="logo" src="img/logo.png" /></a> 
+    </div> 
+    <div> <a class="button-login" href="login.html"> Login </a> <a class="button-login button-register" href="register.html"> Register </a> 
+    </div> 
+  </div> </header> 
+<div style="clear: both;"></div> 
+<div class="frontImg"> 
+  <div class="frontImgContainer"> 
+    <div class="container"> 
+      <div class="header"> 
+        <div class="clr"></div> 
+      </div> 
+      <div class="sp-container"> 
+        <div class="sp-content"> 
+          <div class="sp-globe"></div> <h2 class="frame-1">Want Your Updated Attendance ?</h2> <h2 class="frame-2">Dont Know Where to Check regularly.!!</h2> <h2 class="frame-3">Here is How we have solved..</h2> <h2 class="frame-4">Now!</h2> <h2 class="frame-5"><span>Get Connected <br />With <span style="color: rgb(255, 0, 0);">O</span>mniscient</span> <span>For Your Attendance</span></h2> <a class="sp-circle-link" href="Default2.aspx">Join us!</a> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div> 
+<div>&nbsp;
+</div> 
+<div id="mission" data-speed="10" class="bgParallax"> <article> <h1>College Life</h1> <h2>You can make life dance to your tunes inside your college gates  but at the other side of the gate, life sets its own tunes &amp; makes you dance. So live each moment of your college life.</h2> </article> 
+</div> 
+<div class="bottomContainer"> 
+  <div class="aboutOmni"> <h1>What is <span style="color: rgb(255, 0, 0); font-size: 1.4em;">O</span>mniscient?</h1> 
+    <p>Have you ever wondered about your attendance? Less or more or sufficient or insufficient? Leave all the problems behind. Get connected to <span style="color: rgb(255, 0, 0);">O</span>mnicient, Your one-stop solution for all your worries . Now check your attendance on the fly, on your phone or the web, all just one Click away.<span style="color: rgb(255, 0, 0);">O</span>mnicient offers an online Student  Portal for web based rollmarking for Attendance. This Portal offers flexibility of a totally electronic paperless Attendance roll marking system that records Attendance data in real time..!  Also allows teachers for tracking individual student's Attendance as well  at their finger tips. Moreover by <span style="color: rgb(255, 0, 0);">O</span>mnicient every student will be able to tag and track his/her Attendance in one go. So Register now with <span style="color: rgb(255, 0, 0);">O</span>mnicient and come back any time to check your updated records...
+				</p> <br /><br /> 
+  </div> 
+</div> 
+<div id="aboutus" data-speed="15" class="bgParallax"> <article> <h1>Why <span style="color: rgb(255, 0, 0); font-size: 1.4em;">O</span>mniscient?</h1> <h2>The best looking and most efficient way to perform attendance tracking is now in you hands. <span style="color: rgb(255, 0, 0); font-size: 1.4em;">O</span>mniscent has been created to ease keeping track of Your Attendance </h2></article> 
+</div> <footer class="footer"> 
+  <div class="footerContainer"> 
+    <div class="footerRight"> 
+      <div class="iconSocial"> <h2 style="padding-bottom: 20px;"><span style="color: rgb(255, 0, 0);">Connect</span> with Us</h2> <a href="http://www.facebook.com/something"><img class="socialImg" src="img/facebook.png" /></a> <a href="http://plus.google.com/something"><img class="socialImg" src="img/google-plus.png" /></a> <a href="http://www.twitter.com/something"><img class="socialImg" src="img/twitter.png" /></a><br /> <iframe scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 300px; margin-top: 10px; height: 290px;" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FOmniscient%2F642532642512012&amp;width=300&amp;height=290&amp;colorscheme=dark&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true"></iframe> 
+      </div> 
+    </div> 
+    <div class="footerLeft"> <h2><span style="color: rgb(255, 0, 0);">Contact</span> Us</h2> 
+      <p><strong><a style="text-decoration: none; color: rgb(255, 255, 255);" href="mailto:contact@omniscient.com">contact@omniscient.com</a></strong></p> 
+      <p style="font-size: 1.5em;">R V College of Engineering, Bangalore</p> 
+      <p><strong><span style="color: rgb(255, 0, 0); font-size: 1.4em;">O</span>mniscient @ <span style="color: rgb(255, 0, 0);">2014</span> All rights reserved  </strong></p> <br /> 
+    </div> 
+  </div> <br /><br /> </footer> </body>
 </html>
