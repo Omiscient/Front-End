@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Omniscient</title>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="cleartype" content="on">
+
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#modeB').click(function() {
+				$('#USN').css('display', 'none');
+				$('#Passwd-stud').css('display', 'none');
+
+				$('#SID').css('display', 'block');
+				$('#Passwd-staff').css('display', 'block');
+			});
+			$('#modeA').click(function() {
+				$('#USN').css('display', 'block');
+				$('#Passwd-stud').css('display', 'block');
+
+				$('#SID').css('display', 'none');
+				$('#Passwd-staff').css('display', 'none');
+			});			
+		});
+		</script>
+
+	</head>
+	<body class="body">
+		<header class="topContent"> 
+		  <div class="topContainer"> 
+		    <div> <a href="index.html"><img class="logo" src="img/logo.png" /></a> 
+		    </div> 
+		     
+		  </div> 
+  		</header> 
+
+		<div class="midContainer">
+			<div class="midCrap" align="center">
+				
+					<h1 style="color:red;"><b> Attendance Details </b></h1>
+					<style type="text/css">
+					table {width:100%;}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+	.black {
+		background-color: #000;
+		color: #FFF;
+	}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e black" colspan="6">Staff Name: <input type="text" id="staff_name"></th>
+    <th class="tg-031e black" colspan="6">User Id: <input type="text" id="user-id"></th>
+  </tr>
+  <tr>
+    <td class="tg-031e" colspan="12"><center>SUBJECT :<input type="text" id="subject"> </center></td>
+  </tr>
+  <tr>
+    <td class="tg-031e black" rowspan="2">USN</td>
+    <td class="tg-031e black" rowspan="2">Student Name</td>
+    <td class="tg-031e black" colspan="10">Attendance</td>
+  </tr>
+  <tr class="black">
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">2</td>
+    <td class="tg-031e">3</td>
+    <td class="tg-031e">4</td>
+    <td class="tg-031e">5</td>
+    <td class="tg-031e">6</td>
+    <td class="tg-031e">7</td>
+    <td class="tg-031e">8</td>
+    <td class="tg-031e">9</td>
+    <td class="tg-031e">10</td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><input type="text" id="usn-1"></td>
+    <td class="tg-031e"><input type="text" id="usn-1"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><input type="text" id="usn-1"></td>
+    <td class="tg-031e"><input type="text" id="usn-1"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><input type="text" id="usn-1"></td>
+    <td class="tg-031e"><input type="text" id="usn-1"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+  </tr>
+  <tr>
+    <td class="tg-031e"><input type="text" id="usn-1"></td>
+    <td class="tg-031e"><input type="text" id="usn-1"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+    <td class="tg-031e"><input type="checkbox"></td>
+  </tr>
+</table>
+					
+			</div>
+			
+		</div>
+
+  		<footer class="footer"> 
+  <div class="footerContainer"> 
+    <div class="footerRight"> 
+      <div class="iconSocial"> <h2 style="padding-bottom: 20px;"><span style="color: rgb(255, 0, 0);">Connect</span> with Us</h2> <a href="http://www.facebook.com/something"><img class="socialImg" src="img/facebook.png" /></a> <a href="http://plus.google.com/something"><img class="socialImg" src="img/google-plus.png" /></a> <a href="http://www.twitter.com/something"><img class="socialImg" src="img/twitter.png" /></a><br /> <iframe scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 300px; margin-top: 10px; height: 290px;" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FOmniscient%2F642532642512012&amp;width=300&amp;height=290&amp;colorscheme=dark&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true"></iframe> 
+      </div> 
+    </div> 
+    <div class="footerLeft"> <h2><span style="color: rgb(255, 0, 0);">Contact</span> Us</h2> 
+      <p><strong><a style="text-decoration: none; color: rgb(255, 255, 255);" href="mailto:contact@omniscient.com">contact@omniscient.com</a></strong></p> 
+      <p style="font-size: 1.5em;">R V College of Engineering, Bangalore</p> 
+      <p><strong><span style="color: rgb(255, 0, 0); font-size: 1.4em;">O</span>mniscient @ <span style="color: rgb(255, 0, 0);">2014</span> All rights reserved  </strong></p> <br /> 
+    </div> </div> <br /><br /> </footer>
+	</body>
+</html>
